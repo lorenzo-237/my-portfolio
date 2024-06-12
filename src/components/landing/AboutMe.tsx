@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutMe() {
   return (
-    <div>
+    <div className='h-screen'>
       software engineer and web dev french, (english, a bit spanish) hobbies : coding, video games, board games, animes,
       learning new skill (autodidact)
     </div>

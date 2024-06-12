@@ -7,16 +7,16 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className='fixed top-4 left-1/2 transform -translate-x-1/2'>
-      <ul className='flex items-center gap-6 px-4 py-2 border-2 border-black rounded-full'>
+    <nav className='fixed left-32 top-[20px] transform z-50'>
+      <ul className='flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary bg-background hover:border-background hover:bg-primary hover:text-background transition ease-in-out delay-150'>
         {NAV_LINKS.map((link) => (
           <li key={link.name}>
             <Link
               href={link.url}
-              className={cn(buttonVariants({ variant: 'ghost', size: 'smallIcon' }), 'hover:scale-110')}
+              className={cn(buttonVariants({ variant: 'ghost', size: 'icon' }), 'rounded-full p-2')}
             >
               {cloneElement(link.icon, {
-                className: 'h-4 w-4',
+                className: 'h-8 w-8',
               })}
             </Link>
           </li>
