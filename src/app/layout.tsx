@@ -3,6 +3,7 @@ import { Inter, Roboto_Mono } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import './globals.css';
 import { TailwindIndicator } from '@/components/TailwindIndicator';
+import Navbar from '@/components/nav/Navbar';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,7 +29,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang='en' suppressHydrationWarning>
       <head />
       <body className={cn('min-h-screen bg-background font-sans antialiased', inter.variable, roboto.variable)}>
-        {children}
+        <main className=''>
+          <Navbar />
+          {children}
+        </main>
         <TailwindIndicator />
       </body>
     </html>

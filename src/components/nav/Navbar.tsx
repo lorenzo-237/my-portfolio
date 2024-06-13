@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className='fixed left-32 top-[20px] transform z-50'>
-      <ul className='flex items-center gap-2 px-4 py-2 rounded-full border-2 border-primary bg-background hover:border-background hover:bg-primary hover:text-background transition ease-in-out delay-150'>
+    <nav className='fixed left-1/2 top-[8px] lg:top-[30px] -translate-x-1/2  z-50'>
+      <ul className='flex items-center gap-2 px-4 py-1 md:py-2 rounded-full border-2 border-primary bg-background hover:bg-primary hover:text-background transition ease-in-out delay-150'>
         {NAV_LINKS.map((link) => (
           <li key={link.name}>
             <Link
@@ -16,7 +16,7 @@ function Navbar() {
               className={cn(buttonVariants({ variant: 'ghost', size: 'icon' }), 'rounded-full p-2')}
             >
               {cloneElement(link.icon, {
-                className: 'h-8 w-8',
+                className: 'size-6 sm:size-8',
               })}
             </Link>
           </li>

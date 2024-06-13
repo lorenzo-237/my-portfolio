@@ -11,7 +11,7 @@ export const Layout = (
     <div
       {...props}
       className={cn(
-        'max-w-6xl flex-wrap w-full flex gap-4 m-auto',
+        'max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex-wrap w-full flex gap-4 m-auto',
         {
           'max-w-7xl': props.size === 'lg',
           'max-w-4xl': props.size === 'sm',
@@ -41,5 +41,5 @@ export const LayoutActions = (props: ComponentPropsWithoutRef<'div'>) => {
 };
 
 export const LayoutContent = (props: ComponentPropsWithoutRef<'div'>) => {
-  return <div {...props} className={cn('w-full', props.className)} />;
+  return <div {...props} className={cn('w-full flex flex-col items-center justify-center', props.className)} />;
 };

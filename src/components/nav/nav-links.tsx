@@ -1,30 +1,35 @@
 import { NavLinkItem } from './nav.type';
-import { GraduationCap, Lightbulb, Mail, Presentation, User } from 'lucide-react';
+import { GraduationCap, Home, Lightbulb, Mail, Presentation, User } from 'lucide-react';
 
 export const NAV_LINKS: NavLinkItem[] = [
   {
+    icon: <Home />,
+    name: 'home',
+    url: '/',
+  },
+  {
     icon: <User />,
     name: 'about me',
-    url: '/',
+    url: '/about',
   },
   {
     icon: <Lightbulb />,
     name: 'my skills',
-    url: '/',
+    url: '/skills',
   },
   {
     icon: <Presentation />,
     name: 'my projects',
-    url: '/',
+    url: '/projects',
   },
   {
     icon: <GraduationCap />,
     name: 'my education',
-    url: '/',
+    url: '/education',
   },
   {
     icon: <Mail />,
     name: 'contact me',
-    url: '/',
+    url: '/contact',
   },
 ];
