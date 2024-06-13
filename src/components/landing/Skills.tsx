@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, LayoutContent } from '../pages/layout';
 import { Button } from '../ui/button';
 import { Typography } from '../ui/typography';
-import { Languages, Lightbulb } from 'lucide-react';
+import { GraduationCap, Languages, Lightbulb } from 'lucide-react';
 
 function Skills() {
   return (
@@ -28,16 +28,20 @@ function Skills() {
               </li>
               <li>
                 <Typography variant='muted'>
-                  J'ai de l'expérience dans pas mal de technos mais j'ai décidé de vous présenter ma stack préférée.
+                  J&apos;ai de l&apos;expérience dans pas mal de technos mais j&apos;ai décidé de vous présenter ma
+                  stack préférée.
                 </Typography>
               </li>
             </ul>
           </div>
-          <div>
-            <ul>
+          <div className='w-full'>
+            <ul className='grid grid-cols-2 sm:grid-cols-3'>
               <li>✅ = Maitrisé</li>
               <li>👌 = Bon niveau</li>
-              <li>🎓 = Apprentissage</li>
+              <li className='space-x-2 flex items-center'>
+                <GraduationCap className='size-5' />
+                <span> = Apprentissage</span>
+              </li>
             </ul>
           </div>
           <div className='w-full space-y-4'>
@@ -45,7 +49,7 @@ function Skills() {
               <Languages />
               Langages de programmation préférés
             </Typography>
-            <ul className=''>
+            <ul className='grid grid-cols-1 sm:grid-cols-2'>
               <li className='space-x-4'>
                 <span>✅</span>
                 <span>Javascript & Typescript</span>
@@ -62,8 +66,8 @@ function Skills() {
                 <span>👌</span>
                 <span>C# (Librairie .NET & Unity)</span>
               </li>
-              <li className='space-x-4'>
-                <span>🎓</span>
+              <li className='space-x-4 flex items-center'>
+                <GraduationCap className='size-5' />
                 <span>Dart</span>
               </li>
             </ul>
@@ -73,7 +77,7 @@ function Skills() {
               <Languages />
               Frameworks et Librairies
             </Typography>
-            <ul className=''>
+            <ul className='grid grid-cols-1 sm:grid-cols-2'>
               <li className='space-x-4'>
                 <span>✅</span>
                 <span>React</span>
@@ -92,9 +96,13 @@ function Skills() {
                 <span>NestJS</span>
                 <span>❤️</span>
               </li>
-              <li className='space-x-4'>
-                <span>🎓</span>
+              <li className='space-x-4 flex items-center'>
+                <GraduationCap className='size-5' />
                 <span>Flutter</span>
+              </li>
+              <li className='space-x-4 flex items-center'>
+                <GraduationCap className='size-5' />
+                <span>FramerMotion</span>
               </li>
             </ul>
           </div>
@@ -103,18 +111,22 @@ function Skills() {
               <Languages />
               Technos & Outils
             </Typography>
-            <ul className=''>
+            <ul className='grid grid-cols-1 sm:grid-cols-2'>
               <li className='space-x-4'>
                 <span>✅</span>
                 <span>Prisma ORM</span>
               </li>
               <li className='space-x-4'>
                 <span>✅</span>
-                <span>Postgresql / Mysql / HFSQL</span>
+                <span>Postgresql / Mysql / HFSQL / Redis</span>
               </li>
               <li className='space-x-4'>
                 <span>✅</span>
                 <span>Git</span>
+              </li>
+              <li className='space-x-4'>
+                <span>👌</span>
+                <span>Docker</span>
               </li>
               <li className='space-x-4'>
                 <span>🎓</span>

@@ -22,9 +22,9 @@ function AboutMe() {
             <ul className='space-y-6'>
               <li>
                 <Typography variant='p'>
-                  Enthousiaste et passionné par le développement d'applications, je suis un apprenant perpétuel,
+                  Enthousiaste et passionné par le développement d&apos;applications, je suis un apprenant perpétuel,
                   toujours à la recherche de nouveaux défis pour enrichir mes{' '}
-                  <Link href='/skills' className='text-blue-700 font-semibold underline-offset-4 hover:underline'>
+                  <Link href='/skills' className='text-primary underline-offset-4 hover:underline'>
                     compétences
                   </Link>
                   .
@@ -32,16 +32,16 @@ function AboutMe() {
               </li>
               <li>
                 <Typography variant='p'>
-                  Ma curiosité m'amène souvent à explorer des projets open source dans les technologies et langages qui
-                  m'intéressent, tels que <b>Typescript & React</b>.
+                  Ma curiosité m&apos;amène souvent à explorer des projets open source dans les technologies et langages
+                  qui m&apos;intéressent, tels que <b>Typescript & React</b>.
                 </Typography>
               </li>
 
               <li>
                 <Typography variant='p'>
-                  Je suis quelqu'un de très sérieux et professionnel, surtout quand il s'agit de mon travail, mais
-                  j'apprécie aussi la détente et l'humour, car je pense qu'il est important de savoir allier les deux
-                  pour créer une atmosphère de travail agréable et productive.
+                  Je suis quelqu&apos;un de très sérieux et professionnel, surtout quand il s&apos;agit de mon travail,
+                  mais j&apos;apprécie aussi la détente et l&apos;humour, car je pense qu&apos;il est important de
+                  savoir allier les deux pour créer une atmosphère de travail agréable et productive.
                 </Typography>
               </li>
             </ul>
@@ -49,7 +49,8 @@ function AboutMe() {
 
           <div className='w-full'>
             <Typography variant='muted'>
-              PS: Je maîtrise le front-end et le back-end, même si je l'avoue, j'ai une préférence pour le back-end 😆
+              PS: Je maîtrise le front-end et le back-end, même si je l&apos;avoue, j&apos;ai une préférence pour le
+              back-end 😆
             </Typography>
           </div>
 

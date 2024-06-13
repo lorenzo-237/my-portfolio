@@ -41,7 +41,6 @@ function HeroSection() {
             <Typography variant='h3' className='text-center text-lg uppercase'>
               Bienvenue sur mon portfolio 😉
             </Typography>
-
             <div className='shadow'></div>
           </div>
         </LayoutContent>
