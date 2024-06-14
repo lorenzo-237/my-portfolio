@@ -18,7 +18,7 @@ function AboutMe() {
               Développeur full stack
             </Typography>
           </div>
-          <div>
+          <div className='w-full text-justify'>
             <ul className='space-y-6'>
               <li>
                 <Typography variant='p'>
