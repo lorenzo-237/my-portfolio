@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout, LayoutContent } from '../pages/layout';
 import { Button } from '../ui/button';
 import { Typography } from '../ui/typography';
-import { GraduationCap, Languages, Lightbulb } from 'lucide-react';
+import { GraduationCap, Languages, Lightbulb, Box, Component } from 'lucide-react';
 
 function Skills() {
   return (
@@ -74,7 +74,7 @@ function Skills() {
           </div>
           <div className='w-full space-y-4'>
             <Typography variant='h3' className='flex items-center gap-2'>
-              <Languages />
+              <Component />
               Frameworks et Librairies
             </Typography>
             <ul className='grid grid-cols-1 sm:grid-cols-2'>
@@ -108,7 +108,7 @@ function Skills() {
           </div>
           <div className='w-full space-y-4'>
             <Typography variant='h3' className='flex items-center gap-2'>
-              <Languages />
+              <Box />
               Technos & Outils
             </Typography>
             <ul className='grid grid-cols-1 sm:grid-cols-2'>
