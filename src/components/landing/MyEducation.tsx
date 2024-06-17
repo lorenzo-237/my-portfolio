@@ -50,7 +50,7 @@ function MyEducation() {
                 <li className='h-32 flex items-center justify-start'>
                   <div>
                     <Typography variant='h3' className='text-primary text-lg sm:text-xl md:text-2xl lg:text-3xl'>
-                      Developpeur Full Stack
+                      Développeur Full Stack
                     </Typography>
                     <Typography variant='muted'>En freelance</Typography>
                   </div>
