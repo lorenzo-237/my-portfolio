@@ -10,9 +10,9 @@ function ProjectCard({ item }: { item: ProjectItem }) {
       <CardHeader>
         <CardTitle>{item.title}</CardTitle>
       </CardHeader>
-      <CardContent>
-        <p>{item.description}</p>
-        <ul className='flex gap-2'>
+      <CardContent className='space-y-4'>
+        <p className='text-justify text-sm'>{item.description}</p>
+        <ul className='flex flex-col lg:flex-row gap-2 justify-center items-center'>
           {item.badges.map((badge) => (
             <li key={`${item.id}-${badge.id}`}>
               <Badge variant='default'>{badge.name}</Badge>

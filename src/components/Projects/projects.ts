@@ -1,8 +1,10 @@
 import {
   badgeCsharp,
+  badgeHfSQL,
   badgeLdap,
   badgeNextJs,
   badgeNodeJs,
+  badgePostgreSQL,
   badgePrisma,
   badgeTypescript,
   badgeWebSocket,
@@ -14,20 +16,21 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: 'mydoc',
     title: 'Mydoc',
-    description: 'Base de connaissance commune',
+    description:
+      "Base de connaissance commune afin de centraliser le stockage de documents et améliorer la collaboration. Le but du projet était de rassembler divers ressources stockées dans différents outils dans une seule application. L'application comprend une structure de contenu claire pour faciliter la recherche et la navigation. L'application comprend également des contrôles d'accès utilisateur pour garantir que les informations sensibles ne sont accessibles qu'au personnel autorisé.",
     badges: [badgeNextJs],
   },
   {
     id: 'blaster-api',
-    title: 'API Rest Mantis Bug Tracker',
+    title: 'Blater - API Mantis BT',
     description:
-      'Nouvel api pour manipuler la base de données de mantis BT. Il existait déjà une API mise en place par Mantis eux meme mais elle n est pas adapté au mode de fonctionnement de mon entreprise',
+      "J'ai conçu et développé une API pour améliorer la gestion des bogues dans Mantis BT, répondant aux besoins spécifiques de mon entreprise. Cette API personnalisée offre des fonctionnalités plus adaptées aux méthodes de travail des techs & développeurs. J'ai par exemple ajouté un système de changelog lié aux tickets mantis résolus.",
     children: [
       {
         id: 'blast-app',
-        title: 'Blast - Logiciel gestion de tickets mantis ',
+        title: 'Blast - Logiciel gestion de tickets mantis',
         description:
-          "Il s'agit du front end de l'API REST. Il permet de rechercher les bug mantis correspondant aux critères principaux de la boite et aussi d'avoir une gestion des tickets en temps réel sous forme de tableau Kanban. L'authentification passe par un ldap et/ou une base de données SQL Lite.",
+          "Il s'agit du front end de l'API REST. Il permet de rechercher les tickets mantis plus facilement et aussi d'avoir une gestion des tickets en temps réel sous forme de tableau Kanban. L'authentification passe par un ldap et/ou une base de données SQL Lite.",
         badges: [badgeWindev, badgeCsharp, badgeWebSocket, badgeLdap],
       },
     ],
@@ -41,9 +44,24 @@ export const PROJECTS: ProjectItem[] = [
     badges: [badgeLdap, badgeWindev],
   },
   {
-    id: 'test',
-    title: 'test',
-    description: 'test',
-    badges: [badgeLdap],
+    id: 'pds',
+    title: 'Module Plan de soins',
+    description:
+      "J'ai conçu et développé un module de génération de plan de soins avec gestion des ordonnances pour aider des groupes privés à accélérer leur traitement des ordonnances de plusieurs mois à quelques jours/semaines. Le module permet de créer des plans de soins personnalisés pour les patients, de gérer les ordonnances et de les envoyers aux services tiers correspondants.",
+    badges: [badgeWindev, badgeHfSQL],
+  },
+  {
+    id: 'sync-hf-pg',
+    title: 'Synchronisation base de données',
+    description:
+      "J'ai développé un outil de synchronisation entre deux bases de données, HFSQL et PG SQL, pour permettre une mise à jour automatique, à interval régulier, entre les deux systèmes. L'outil utilise des requêtes SQL pour extraire les données de chaque base de données, puis les compare pour identifier les différences et les mettre à jour en conséquence.",
+    badges: [badgeWindev, badgePostgreSQL, badgeHfSQL],
+  },
+  {
+    id: 'extra',
+    title: 'Et plus encore',
+    description:
+      "En raison de contraintes de confidentialité, je ne peux pas divulguer ici les détails de nombreux projets sur lesquels j'ai travaillé. Cependant, je peux vous assurer que j'ai une expérience solide et diversifiée dans la conception et la réalisation de logiciel et d'application web.",
+    badges: [],
   },
 ];
