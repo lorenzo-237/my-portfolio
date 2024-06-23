@@ -1,13 +1,13 @@
 import React from 'react';
 import { Layout, LayoutContent } from '../pages/layout';
 import { Button } from '../ui/button';
-import { GraduationCap, Heart, Languages } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { Typography } from '../ui/typography';
-import Link from 'next/link';
+import Footer from '../Footer';
 
 function MyEducation() {
   return (
-    <div className='relative h-screen'>
+    <div className='relative h-full sm:h-screen'>
       <Layout className='h-full'>
         <LayoutContent className='mt-20 sm:mt-0 space-y-6'>
           <div className='w-full'>
@@ -85,6 +85,7 @@ function MyEducation() {
           </div>
         </LayoutContent>
       </Layout>
+      <Footer />
     </div>
   );
 }

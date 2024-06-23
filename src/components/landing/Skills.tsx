@@ -3,10 +3,11 @@ import { Layout, LayoutContent } from '../pages/layout';
 import { Button } from '../ui/button';
 import { Typography } from '../ui/typography';
 import { GraduationCap, Languages, Lightbulb, Box, Component } from 'lucide-react';
+import Footer from '../Footer';
 
 function Skills() {
   return (
-    <div className='relative h-screen'>
+    <div className='relative h-full sm:h-screen '>
       <Layout className='h-full'>
         <LayoutContent className='mt-20 sm:mt-0 space-y-6'>
           <div className='w-full'>
@@ -136,6 +137,7 @@ function Skills() {
           </div>
         </LayoutContent>
       </Layout>
+      <Footer />
     </div>
   );
 }

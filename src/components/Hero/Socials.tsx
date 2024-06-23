@@ -5,9 +5,9 @@ import { Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
-function Socials() {
+function Socials({ className }: { className?: string }) {
   return (
-    <div className='relative z-20'>
+    <div className={cn('relative z-20', className)}>
       <Link
         href='https://github.com/lorenzo-237'
         target='_blank'

@@ -4,10 +4,11 @@ import { Button } from '../ui/button';
 import { Heart, Languages, User } from 'lucide-react';
 import { Typography } from '../ui/typography';
 import Link from 'next/link';
+import Footer from '../Footer';
 
 function AboutMe() {
   return (
-    <div className='relative h-screen'>
+    <div className='relative h-full sm:h-screen'>
       <Layout className='h-full'>
         <LayoutContent className='mt-20 sm:mt-0 space-y-6'>
           <div className='w-full'>
@@ -102,6 +103,7 @@ function AboutMe() {
           </div>
         </LayoutContent>
       </Layout>
+      <Footer className='' />
     </div>
   );
 }
