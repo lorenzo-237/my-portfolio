@@ -13,7 +13,7 @@ import Socials from '../Hero/Socials';
 function HeroSection() {
   return (
     <div className='relative h-screen'>
-      <Layout className='h-[calc(100vh_-_100px)] sm:h-[calc(100vh_-_150px)]'>
+      <Layout className='h-[calc(100vh_-_100px)] sm:h-[calc(100vh_-_180px)]'>
         <LayoutContent className='lg:flex-row'>
           <div className='lg:w-1/2'>
             <div className='space-y-2'>
