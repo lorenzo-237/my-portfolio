@@ -26,7 +26,7 @@ export const badgeNodeJs: BadgeItem = {
 
 export const badgePrisma: BadgeItem = {
   id: 'prisma',
-  color: 'blue',
+  color: 'green',
   name: 'Prisma',
 };
 
@@ -38,7 +38,7 @@ export const badgeTypescript: BadgeItem = {
 
 export const badgeWindev: BadgeItem = {
   id: 'windev',
-  color: 'red',
+  color: 'yellow',
   name: 'WinDev',
 };
 
@@ -56,6 +56,30 @@ export const badgeHfSQL: BadgeItem = {
 
 export const badgeCsharp: BadgeItem = {
   id: 'csharp',
-  color: 'blue',
+  color: 'purple',
   name: 'C#',
 };
+
+// Nouvelles badges
+export const badgeReact: BadgeItem = {
+  id: 'react',
+  color: 'cyan',
+  name: 'React',
+};
+
+// Fonction pour obtenir la classe Tailwind
+export function getTailwindClass(color: BadgeItem['color']): string {
+  const colorMap: { [key in BadgeItem['color']]: string } = {
+    red: 'bg-red-500 text-white',
+    yellow: 'bg-yellow-500 text-black',
+    blue: 'bg-blue-500 text-white',
+    green: 'bg-green-500 text-white',
+    purple: 'bg-purple-500 text-white',
+    orange: 'bg-orange-500 text-white',
+    pink: 'bg-pink-500 text-white',
+    cyan: 'bg-cyan-500 text-black',
+    lime: 'bg-lime-500 text-black',
+  };
+
+  return colorMap[color];
+}
