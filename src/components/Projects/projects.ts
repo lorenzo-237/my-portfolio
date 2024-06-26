@@ -17,11 +17,11 @@ export const PROJECTS: ProjectItem[] = [
     id: 'mydoc',
     title: 'Mydoc',
     description:
-      "Base de connaissance commune afin de centraliser le stockage de documents et améliorer la collaboration. Le but du projet était de rassembler divers ressources stockées dans différents outils dans une seule application. L'application comprend une structure de contenu claire pour faciliter la recherche et la navigation. L'application comprend également des contrôles d'accès utilisateur pour garantir que les informations sensibles ne sont accessibles qu'au personnel autorisé.",
+      "Base de connaissance commune afin de centraliser le stockage de documents et améliorer la collaboration. Le but du projet était de rassembler divers ressources stockées dans différents outils dans une seule application. L'application comprend une structure de contenu claire pour faciliter la recherche et la navigation.",
     badges: [badgeNextJs],
     action: {
       type: 'demo',
-      url: 'test',
+      url: 'dev',
     },
   },
   {
@@ -37,8 +37,8 @@ export const PROJECTS: ProjectItem[] = [
           "Il s'agit du front end de l'API REST. Il permet de rechercher les tickets mantis plus facilement et aussi d'avoir une gestion des tickets en temps réel sous forme de tableau Kanban. L'authentification passe par un ldap et/ou une base de données SQL Lite.",
         badges: [badgeWindev, badgeCsharp, badgeWebSocket, badgeLdap],
         action: {
-          type: 'url',
-          url: 'test',
+          type: 'pictures',
+          url: 'dev',
         },
       },
     ],
@@ -55,8 +55,8 @@ export const PROJECTS: ProjectItem[] = [
       "Logiciel de gestion clients de l'entreprise. Il permet de rechercher et faire des actions sur les structures de nos clients. Notamment l'activation des licences, l'envoie de mail, le déclenchement de mise à jour etc. Il y a un système d'authentification avec des droits spécifiques.",
     badges: [badgeLdap, badgeWindev],
     action: {
-      type: 'github',
-      url: 'https://github.com/lorenzo-237/blaster-api.git',
+      type: 'pictures',
+      url: 'dev',
     },
   },
   {

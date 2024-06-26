@@ -6,7 +6,7 @@ import { Button, buttonVariants } from '../ui/button';
 import { getTailwindClass } from './badges';
 import Link from 'next/link';
 import { GitHubLogoIcon, VercelLogoIcon } from '@radix-ui/react-icons';
-import { Rocket } from 'lucide-react';
+import { ImagePlay, Rocket } from 'lucide-react';
 
 function ProjectCard({ item }: { item: ProjectItem }) {
   return (
@@ -58,6 +58,14 @@ function ActionButton({ action }: { action: ActionItem }) {
         <Link href={action.url} className={buttonVariants({ size: 'sm' })}>
           <VercelLogoIcon className='mr-2 size-4' />
           Voir la démo
+        </Link>
+      );
+
+    case 'pictures':
+      return (
+        <Link href={action.url} className={buttonVariants({ size: 'sm' })}>
+          <ImagePlay className='mr-2 size-4' />
+          Voir les images
         </Link>
       );
     default:

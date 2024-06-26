@@ -9,7 +9,7 @@ import Footer from '../Footer';
 
 function MyProjects() {
   return (
-    <div className='relative h-full'>
+    <div className='relative h-full sm:mt-16 md:mt-32'>
       <Layout className='h-full'>
         <LayoutContent className='mt-20 sm:mt-0 space-y-6'>
           <div className='w-full'>

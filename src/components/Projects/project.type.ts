@@ -14,6 +14,6 @@ export type BadgeItem = {
 };
 
 export type ActionItem = {
-  type: 'url' | 'demo' | 'github';
+  type: 'url' | 'pictures' | 'demo' | 'github';
   url: string;
 };
