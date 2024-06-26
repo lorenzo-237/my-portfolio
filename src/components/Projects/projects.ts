@@ -18,7 +18,7 @@ export const PROJECTS: ProjectItem[] = [
     title: 'Mydoc',
     description:
       "Base de connaissance commune afin de centraliser le stockage de documents et améliorer la collaboration. Le but du projet était de rassembler divers ressources stockées dans différents outils dans une seule application. L'application comprend une structure de contenu claire pour faciliter la recherche et la navigation.",
-    badges: [badgeNextJs],
+    badges: [badgeNextJs, badgePrisma, badgeTypescript],
     action: {
       type: 'demo',
       url: 'dev',
