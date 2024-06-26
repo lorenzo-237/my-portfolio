@@ -17,7 +17,7 @@ function HeroSection() {
         <LayoutContent className='lg:flex-row'>
           <div className='lg:w-1/2'>
             <div className='space-y-2'>
-              <Typography variant='h3' className='uppercase text-md sm:text-lg md:text-xl'>
+              <Typography variant='h2' className='uppercase text-md sm:text-lg md:text-xl'>
                 Développeur Full Stack Qualifié
               </Typography>
               <Typography variant='h1' className='text-2xl sm:text-4xl md:text-5xl'>

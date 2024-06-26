@@ -24,7 +24,7 @@ function Socials({ className }: { className?: string }) {
       </Link>
 
       <Link
-        href='https://www.linkedin.com/'
+        href='https://www.linkedin.com/in/lorenzo-magni-9b801a25a'
         target='_blank'
         className={cn(
           buttonVariants({
