@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 import { TailwindIndicator } from '@/components/TailwindIndicator';
 import Navbar from '@/components/nav/Navbar';
+import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           {children}
         </main>
         <TailwindIndicator />
+        <Toaster />
       </body>
     </html>
   );
