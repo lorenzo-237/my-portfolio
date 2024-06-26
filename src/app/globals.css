@@ -6,7 +6,9 @@
   :root {
     /* Name: custom color palette
        Author: Ilias Ism
-       URL: https://gradient.page */
+       URL: https://gradient.page 
+       Tool: https://gradient.page/tools/shadcn-ui-theme-generator
+       */
 
     /* CSS: .bg-gradient { background: var(--gradient) } */
     --gradient: #e6b980;
